@@ -12,7 +12,7 @@ deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-2"
   app: "docker-flow"
-  env: "dockerflow-env"
+  env: "DockerFlow-env"
   bucket_name: "elasticbeanstalk-ap-southeast-2-040634411197"
   bucket_path: "docker-flow"
   on:
