@@ -1,10 +1,9 @@
 sudo: required
-
 services:
   - docker
 
 before_install:
-  - docker build -t DamengRandom/docker-flow-with-ci-cd -f Dockerfile.dev .
+  - docker build -t damengrandom/docker-flow -f Dockerfile.dev .
 
 script:
-  - docker run DamengRandom/docker-flow-with-ci-cd yarn run test -- --coverage
+  - docker run damengrandom/docker-flow yarn run test -- --coverage
