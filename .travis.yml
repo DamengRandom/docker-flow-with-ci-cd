@@ -6,4 +6,4 @@ before_install:
   - docker build -t damengrandom/docker-flow -f Dockerfile.dev .
 
 script:
-  - docker run damengrandom/docker-flow yarn run test -- --coverage
+  - docker run damengrandom/docker-flow yarn run test --watchAll=false --coverage
